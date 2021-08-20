@@ -19,9 +19,16 @@ img{
 .df{
     display: flex;
 }
+.display-{
+    display: flex;
+}
 a{
     text-decoration: none;
 }
+a:hover{
+    text-decoration: none;
+}
+
 
 /* end of  constant classes */
 
@@ -44,12 +51,27 @@ a{
 
 
 
+/*---------header--------------*/
+
+
+/*---------header-----------------*/
 
 
 
 
 
-/*-----------------FONTS-------------*/
+
+/*---------Footer--------------*/
+
+
+/*---------Footer-----------------*/
+
+
+
+
+
+
+/*--------------#####---FONTS---#######33----------*/
 @font-face {
     font-family: Vazir FD;
     font-weight: normal;
