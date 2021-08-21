@@ -2,44 +2,54 @@
 Required css
 default style
 */
-html{
+html {
     box-sizing: border-box;
- 
+
 }
-*,*:before,*:after{
+
+*,
+*:before,
+*:after {
     box-sizing: inherit;
     margin: 0;
     padding: 0;
 }
+
 /*when scaling webiste image is not disapper behind page and scale */
-img{
+img {
     max-width: 100%;
 }
 
-.df{
+.df {
     display: flex;
 }
-.display-{
-    display: flex;
+
+li {
+    list-style: none;
 }
-a{
+
+a {
     text-decoration: none;
 }
-a:hover{
+
+a:hover {
     text-decoration: none;
+    /* transition: all ease .3s; */
+    color: #3979D9;
+    cursor: pointer;
 }
+
+
 
 
 /* end of  constant classes */
 
 /*-----------------START MAIN--------------*/
 /*common mobile 576*/
-@media (min-width :576px) {
-
-}
+@media (min-width :576px) {}
 
 /*small mobile 357 */
-.test{
+.test {
     font-family: 'peyda' !important;
     font-style: normal;
     font-weight: 800;
@@ -53,6 +63,59 @@ a:hover{
 
 /*---------header--------------*/
 
+header {
+
+
+    position: fixed;
+    width: 100%;
+    height: 5.5rem;
+    z-index: 10;
+    top: 0;
+}
+
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    line-height: 2rem;
+
+}
+
+header nav ul {
+    display: flex;
+}
+
+header nav ul li {
+    padding: 0.9rem;
+
+}
+
+header nav ul li a {
+    font: 500 0.875rem/1.1rem Vazir FD !important;
+    color: #464646
+}
+
+.logo img {
+    height: 2.38rem;
+}
+
+.btn_header {
+
+    display: flex;
+    font: 500 0.875rem/1rem Vazir FD !important;
+    align-items: center;
+    padding: 0.32rem 0.81rem 0.3rem 1.31rem;
+    border-radius: 100px;
+    background-color: #3979D9;
+    color: #fff;
+    border: none;
+}
+
+
+
 
 /*---------header-----------------*/
 
@@ -63,6 +126,113 @@ a:hover{
 
 /*---------Footer--------------*/
 
+.sub-footer {
+    position: sticky;
+    bottom: -10rem;
+    background-color: #000;
+    height: 3.775rem;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.sub-footer p {
+
+    color: #fff;
+    font: 0.875rem/1rem Vazir FD !important;
+}
+
+.carzar {
+    background-color: #fff;
+    color: #3979D9;
+    margin-right: 1.5rem;
+    font: 0.875rem/1rem Vazir FD !important;
+    border-radius: .62rem;
+    padding: .5rem .93rem;
+    border: none;
+
+
+}
+
+.main-footer {
+
+    align-items: center;
+    justify-content: space-evenly;
+    height: 16.1rem;
+}
+
+/* .main-footer ul {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 10%;
+
+
+} */
+
+/* .main-footer p {
+    
+    font: 1.1rem/1.4rem peyda !important;
+    color: #4A529E;
+    
+} */
+
+footer ul li {
+    padding: .5rem;
+}
+
+footer ul li a {
+    font: 0.875rem/1rem Vazir FD !important;
+    color: #404040;
+
+
+}
+
+.title {
+    font-weight: 500;
+    padding-bottom: .8rem;
+}
+
+.cap {
+    height: 160px;
+    width: 263px;
+    background-color: #EFF1FA;
+    position: relative;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 7px;
+}
+
+.cap p {
+
+    padding: .5rem;
+    font: bold 1.12rem/1.4rem peyda !important;
+    color: #4A529E;
+
+}
+
+.cap img {
+    position: absolute;
+    z-index: 1;
+    top: -100px;
+}
+
+.copy-right {
+    width: 100%;
+    height: 10vh;
+    text-align: center;
+    line-height: 4rem;
+    margin-top: 10vh;
+    font-weight: 500;
+}
+
+footer i,
+span {
+    color: #3979D9;
+}
 
 /*---------Footer-----------------*/
 
