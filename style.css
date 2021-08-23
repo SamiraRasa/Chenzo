@@ -3,229 +3,495 @@ Required css
 default style
 */
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *,
 *:before,
 *:after {
-    box-sizing: inherit;
-    margin: 0;
-    padding: 0;
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    margin-top: 5.5rem;
-    font-family: Vazir FD;
+  margin-top: 5.5rem;
+  font-family: Vazir FD;
 }
 
 /*when scaling webiste image is not disapper behind page and scale */
-/* img{
-    max-width: 100%;
+/* img {
+  max-width: 100%;
 } */
 
 .df {
-    display: flex;
+  display: flex;
 }
 
 li {
-    list-style: none;
+  list-style: none;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 a:hover {
-    text-decoration: none;
-    /* transition: all ease .3s; */
-    color: #3979D9;
-    cursor: pointer;
+  text-decoration: none;
+  /* transition: all ease .3s; */
+  color: #3979d9;
+  cursor: pointer;
 }
 
-
-
+button {
+  font-family: Vazir FD !important;
+}
 
 /* end of  constant classes */
 
 /*-----------------START MAIN--------------*/
-main {
-    direction: rtl;
+
+@media only screen and (min-width: 2000px) {
+  .hero__text h1 {
+    font-size: 5rem !important;
+  }
+  .hero__text {
+    max-width: 2000px !important;
+  }
 }
 
 /*common mobile 576*/
-@media (min-width: 576px) {}
+@media only screen and (max-width: 1034px) {
+  .neshan__do .left {
+    align-items: center !important;
+  }
+  .neshan__do {
+    text-align: center;
+    flex-wrap: wrap;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+  .row {
+    text-align: center;
+    flex-wrap: wrap;
+    flex-direction: column !important;
+  }
+  .section__img {
+    order: 0;
+  }
+  .section__text {
+    order: 1;
+  }
+  .blue_container {
+    padding: 1rem !important;
+  }
+  .section__text p {
+    padding: 0 12rem 2rem 12rem !important;
+  }
+}
+@media only screen and (max-width: 766px) {
+  .section__img {
+    width: 100% !important;
+  }
+  .section__img img {
+    max-width: 100% !important;
+  }
+  .neshan__do .right img {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 761px) {
+  .go-down{
+    display: none;
+  }
+  }
+
+.go-down{
+  border-radius: 50%;
+  padding: 1rem;
+  background-color: white;
+  color: black;
+  position: absolute;
+  bottom: 5rem;
+  right: 1rem;
+}
+@media only screen and (max-width: 761px) {
+  .icon__search {
+    left: 10px!important;
+  }
+  /*for tablets*/
+  .icon-search {
+    flex-direction: column !important;
+  }
+  .search__container {
+    /* width: 100%; */
+    margin-bottom: 1rem !important;
+  }
+  .black__container h1 {
+    text-align: center;
+    font-size: 1rem;
+  }
+  .icon__container div {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+@media only screen and (max-width: 1012px) {
+  .container {
+    max-width: unset !important;
+    width: 100%;
+    margin: 0 0 !important;
+  }
+  .section__text p {
+    padding: 0 !important;
+  }
+}
 
 /*small mobile 357 */
 
 .hero__image {
-    background-image: url(image/tehran.jpg);
-    background-repeat: no-repeat;
+  background-image: url(image/tehran.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: calc(100vh - 85px) !important;
+  /* $a: 100vh 
+  height: calc(#{$a} - 85px) */
+  position: relative;
+}
+@media (max-width: 761px) {
+  .section__text h1 {
+    margin-top: 1rem !important;
+  }
+
+  .hero__image {
+    background-image: url(image/tehran360.jpg);
     background-position: center center;
     background-size: cover;
-    height: calc(100vh - 85px) !important;
-    /* $a: 100vh 
-  height: calc(#{$a} - 85px) */
-    position: relative;
+  }
+  main {
+    width: fit-content;
+  }
+  .hero__text {
+    flex-direction: row-reverse;
+  }
+  .hero__text h1 {
+    font-size: 2rem !important;
+    flex-basis: 70% !important;
+  }
+  .neshan__do {
+    margin-top: 2rem;
+  }
+
 }
 
 .hero__text {
-    /* top: 10rem;
-    right: 9rem; */
-    /* position: absolute; */
-    /* background-color: khaki; */
-    z-index: 1;
-    /* padding: 2rem;
-    top: 5rem; */
-    /* margin-top: 5rem; */
-    padding-top: 8rem;
-    padding-right: 7rem;
-    max-width: 1140px;
-    margin: 0 auto;
+  max-width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  top: 16%;
+  position: relative;
+  padding: 0 3rem;
 }
 
 .hero__text h1 {
-    /* margin: 14% 7% 0 0; */
-    font-size: 44px !important;
-    font-weight: 900;
-    color: #262626 !important;
-    line-height: 48px;
-    font-family: peyda !important;
+  flex-basis: 40%;
+  flex-shrink: 0;
+  font-size: 3rem;
+  font-weight: 900;
+  color: #262626 !important;
+  font-family: peyda !important;
 }
-
 .container {
-    /* background-color: lightcoral; */
-    max-width: 1140px;
-    margin: 0 auto;
+  max-width: 1140px;
+  margin: 0 auto;
+  margin-top: 20px;
+  width: fit-content;
 }
 
 .neshan__do {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 4rem;
+}
+.row {
+  align-items: center;
 }
 
 .neshan__do h1 {
-    font-family: peyda !important;
-
+  font-family: peyda !important;
+}
+.section__text {
+  flex-basis: 100%;
+}
+.top {
+  margin-top: -7rem;
+}
+.section__text h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: peyda !important;
+  margin: 0 4rem 1rem 4rem;
+}
+.section__text p {
+  color: rgba(255, 255, 255, 0.75);
+  margin: 0 4rem 1rem 4rem;
 }
 
+.section__img {
+  flex-basis: 100%;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+}
 .neshan__do .left {
-    padding: 5rem 3rem;
+  padding: 5rem 3rem;
+  flex-basis: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+}
+.neshan__do .left h1 {
+  margin-bottom: 20px;
+}
+.neshan__do .left .content {
+  margin-bottom: 1.6em;
+  text-align: center;
+}
+.neshan__do .right {
+  padding: 10px;
+  flex-basis: 100%;
 }
 
 .btn__blue {
-    background-color: #3979D9;
-    color: white;
-    padding: 10px 20px;
-    font-family: Vazir FD !important;
-    outline: none;
-    border: none;
-    justify-content: center;
-    align-items: center;
-    border-radius: 20px;
+  background-color: #3979d9;
+  color: white;
+  padding: 10px 20px;
+  font-family: Vazir FD !important;
+  outline: none;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  width: fit-content;
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
-
+.btn__blue:hover {
+  transform: translateY(-10px);
+}
 .blue_container {
-    background-color: blue;
-    border-radius: 1rem;
+  padding: 3rem 5rem;
+  background-color: #3979d9;
+  border-radius: 1rem;
+  color: white;
+}
+.black__container {
+  border-radius: 1rem;
+  background-color: #404040;
+  margin: 5rem 2rem;
+  padding: 3rem;
+}
+.black__container h1 {
+  color: white;
 }
 
+.icon__bag,
+.icon__restaurant,
+.icon__atm,
+.icon__build {
+  color: white;
+  width: 48px;
+  height: 48px;
+  margin-right: 1rem;
+}
+
+/* search box*/
+.icon-search {
+  align-items: center;
+  margin-top: 1rem;
+  display: flex;
+}
+.search__container {
+  flex-grow: 1;
+}
+
+@media (min-width:761px) {
+  .input-search input {
+    width: 80%;
+  }
+  
+}
+.input-search input {
+  /* width: 80%; */
+  outline: none;
+  border: none;
+  border-radius: 1rem;
+  background-color: white;
+  padding: 10px 1rem;
+}
+
+.icon__search {
+  position: absolute;
+  z-index: 100;
+  top: 10px;
+  left: calc(20% + 10px);
+  margin: 0 auto;
+}
+/*----------*/
+/*---card---*/
+/*---------*/
+@media only screen and (max-width: 771px) {
+  .card {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .card_section {
+    margin-top: 1rem;
+    flex-grow: 1;
+  }
+}
+.card {
+  justify-content: space-between;
+  padding: 0 1rem;
+  /* flex-wrap: wrap; */
+}
+.card__header h1 {
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: bold;
+  font-family: peyda !important;
+}
+
+.card-1 {
+  flex-basis: 50%;
+}
+.card-2 {
+  flex-basis: 40%;
+}
+.card_section {
+  background-color: #f2f4fb;
+  border-radius: 1rem;
+  padding: 2rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.card__btn p {
+  font-size: Vazir FD !important;
+}
+.card__btn {
+  margin-top: 1rem;
+  border: 1px solid #4e7fea;
+  border-radius: 20px 20px 20px 20px;
+  padding: 0.5rem 1.5rem;
+  background-color: white;
+  color: black;
+  font-size: 14px;
+  font-weight: bold;
+  border-width: 2px 2px 2px 2px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  outline: 0;
+}
+
+.card__btn:hover {
+  transform: translateY(-7px);
+  box-shadow: 1px 1px 6px 0px rgb(128 128 128 / 35%);
+}
+.card__btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card__btn i {
+  color: #4e7fea;
+  margin-right: 1rem;
+}
 /*-----------------END MAIN--------------*/
 
 /*---------header--------------*/
 
 header {
-
-    background-color: #fff;
-    position: fixed;
-    width: 100%;
-    height: 5.5rem;
-    z-index: 10;
-    top: 0;
+  background-color: #fff;
+  position: fixed;
+  width: 100%;
+  height: 5.5rem;
+  z-index: 10;
+  top: 0;
 }
 
-
 header nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-    line-height: 2rem;
-
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  line-height: 2rem;
 }
 
 header nav ul {
-    display: flex;
+  display: flex;
 }
 
 header nav ul li {
-    padding: 0.9rem;
-
+  padding: 0.9rem;
 }
 
 header nav ul li a {
-    font: 500 0.875rem/1.1rem Vazir FD !important;
-    color: #464646
+  font: 500 0.875rem/1.1rem Vazir FD !important;
+  color: #464646;
 }
 
 .logo img {
-    height: 2.38rem;
+  height: 2.38rem;
 }
 
 .btn_header {
-
-    display: flex;
-    font: 500 0.875rem/1rem Vazir FD !important;
-    align-items: center;
-    padding: 0.32rem 0.81rem 0.3rem 1.31rem;
-    border-radius: 100px;
-    background-color: #3979D9;
-    color: #fff;
-    border: none;
+  display: flex;
+  font: 500 0.875rem/1rem Vazir FD !important;
+  align-items: center;
+  padding: 0.32rem 0.81rem 0.3rem 1.31rem;
+  border-radius: 100px;
+  background-color: #3979d9;
+  color: #fff;
+  border: none;
 }
-
-
-
 
 /*---------header-----------------*/
 
 /*---------Footer--------------*/
 
 .sub-footer {
-    position: sticky;
-    bottom: -10rem;
-    background-color: #000;
-    height: 3.775rem;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-
+  position: sticky;
+  bottom: -10rem;
+  background-color: #000;
+  height: 3.775rem;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
 .sub-footer p {
-
-    color: #fff;
-    font: 0.875rem/1rem Vazir FD !important;
+  color: #fff;
+  font: 0.875rem/1rem Vazir FD !important;
 }
 
 .carzar {
-    background-color: #fff;
-    color: #3979D9;
-    margin-right: 1.5rem;
-    font: 0.875rem/1rem Vazir FD !important;
-    border-radius: .62rem;
-    padding: .5rem .93rem;
-    border: none;
-
-
+  background-color: #fff;
+  color: #3979d9;
+  margin-right: 1.5rem;
+  font: 0.875rem/1rem Vazir FD !important;
+  border-radius: 0.62rem;
+  padding: 0.5rem 0.93rem;
+  border: none;
 }
 
 .main-footer {
-
-    align-items: center;
-    justify-content: space-evenly;
-    height: 16.1rem;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 16.1rem;
 }
 
 /* .main-footer ul {
@@ -244,185 +510,181 @@ header nav ul li a {
 } */
 
 footer ul li {
-    padding: .5rem;
+  padding: 0.5rem;
 }
 
 footer ul li a {
-    font: 0.875rem/1rem Vazir FD !important;
-    color: #404040;
-
-
+  font: 0.875rem/1rem Vazir FD !important;
+  color: #404040;
 }
 
 .title {
-    font-weight: 500;
-    padding-bottom: .8rem;
+  font-weight: 500;
+  padding-bottom: 0.8rem;
 }
 
 .cap {
-    height: 160px;
-    width: 263px;
-    background-color: #EFF1FA;
-    position: relative;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-    padding-bottom: 7px;
+  height: 160px;
+  width: 263px;
+  background-color: #eff1fa;
+  position: relative;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding-bottom: 7px;
 }
 
 .cap p {
-
-    padding: .5rem;
-    font: bold 1.12rem/1.4rem peyda !important;
-    color: #4A529E;
-
+  padding: 0.5rem;
+  font: bold 1.12rem/1.4rem peyda !important;
+  color: #4a529e;
 }
 
 .cap img {
-    position: absolute;
-    z-index: 1;
-    top: -100px;
+  position: absolute;
+  z-index: 1;
+  top: -100px;
 }
 
 .copy-right {
-    width: 100%;
-    height: 10vh;
-    text-align: center;
-    line-height: 4rem;
-    margin-top: 10vh;
-    font-weight: 500;
+  width: 100%;
+  height: 10vh;
+  text-align: center;
+  line-height: 4rem;
+  margin-top: 10vh;
+  font-weight: 500;
 }
 
 footer i,
 span {
-    color: #3979D9;
+  color: #3979d9;
 }
 
 /*---------Footer-----------------*/
 
 /*--------------#####---FONTS---#######33----------*/
 @font-face {
-    font-family: Vazir FD;
-    font-weight: normal;
-    src: url("fonts/Vazir-FD.woff2") format("woff2"),
-        url("fonts/Vazir-FD.woff") format("woff");
+  font-family: Vazir FD;
+  font-weight: normal;
+  src: url("fonts/Vazir-FD.woff2") format("woff2"),
+    url("fonts/Vazir-FD.woff") format("woff");
 }
 
 @font-face {
-    font-family: Vazir FD;
-    font-weight: bold;
-    src: url("fonts/Vazir-Bold-FD.woff2") format("woff2"),
-        url("fonts/Vazir-Bold-FD.woff") format("woff");
+  font-family: Vazir FD;
+  font-weight: bold;
+  src: url("fonts/Vazir-Bold-FD.woff2") format("woff2"),
+    url("fonts/Vazir-Bold-FD.woff") format("woff");
 }
 
 @font-face {
-    font-family: Vazir FD;
-    font-weight: 500;
-    src: url("fonts/Vazir-Medium-FD.woff2") format("woff2"),
-        url("fonts/Vazir-Medium-FD.woff") format("woff");
+  font-family: Vazir FD;
+  font-weight: 500;
+  src: url("fonts/Vazir-Medium-FD.woff2") format("woff2"),
+    url("fonts/Vazir-Medium-FD.woff") format("woff");
 }
 
 @font-face {
-    font-family: Vazir FD;
-    font-weight: 900;
-    src: url("fonts/Vazir-Black-FD.woff2") format("woff2"),
-        url("fonts/Vazir-Black-FD.woff") format("woff");
+  font-family: Vazir FD;
+  font-weight: 900;
+  src: url("fonts/Vazir-Black-FD.woff2") format("woff2"),
+    url("fonts/Vazir-Black-FD.woff") format("woff");
 }
 
 @font-face {
-    font-family: peyda;
-    font-style: normal;
-    font-weight: 600;
-    src: url("fonts/woff2/PeydaWeb-SemiBold.woff2") format("woff2"),
-        url("fonts/woff/PeydaWeb-SemiBold.woff") format("woff");
+  font-family: peyda;
+  font-style: normal;
+  font-weight: 600;
+  src: url("fonts/woff2/PeydaWeb-SemiBold.woff2") format("woff2"),
+    url("fonts/woff/PeydaWeb-SemiBold.woff") format("woff");
 }
 
 @font-face {
-    font-family: peyda;
-    font-style: normal;
-    font-weight: 750;
-    src: url("fonts/woff2/PeydaWeb-Ultrabold.woff2") format("woff2"),
-        url("fonts/woff/PeydaWeb-Ultrabold.woff") format("woff");
+  font-family: peyda;
+  font-style: normal;
+  font-weight: 750;
+  src: url("fonts/woff2/PeydaWeb-Ultrabold.woff2") format("woff2"),
+    url("fonts/woff/PeydaWeb-Ultrabold.woff") format("woff");
 }
 
 @font-face {
-    font-family: peyda;
-    font-style: normal;
-    font-weight: 800;
-    src: url("fonts/woff2/PeydaWeb-ExtraBold.woff2") format("woff2"),
-        url("fonts/woff/PeydaWeb-ExtraBold.woff") format("woff");
+  font-family: peyda;
+  font-style: normal;
+  font-weight: 800;
+  src: url("fonts/woff2/PeydaWeb-ExtraBold.woff2") format("woff2"),
+    url("fonts/woff/PeydaWeb-ExtraBold.woff") format("woff");
 }
 
 @font-face {
-    font-family: peyda;
-    font-style: normal;
-    font-weight: 900;
-    src: url("fonts/woff2/PeydaWeb-Black.woff2") format("woff2"),
-        url("fonts/woff/PeydaWeb-Black.woff") format("woff");
+  font-family: peyda;
+  font-style: normal;
+  font-weight: 900;
+  src: url("fonts/woff2/PeydaWeb-Black.woff2") format("woff2"),
+    url("fonts/woff/PeydaWeb-Black.woff") format("woff");
 }
 
 @font-face {
-    font-family: peyda;
-    font-style: normal;
-    font-weight: bold;
-    src: url("fonts/woff2/PeydaWeb-Bold.woff2") format("woff2"),
-        url("fonts/woff/PeydaWeb-Bold.woff") format("woff");
+  font-family: peyda;
+  font-style: normal;
+  font-weight: bold;
+  src: url("fonts/woff2/PeydaWeb-Bold.woff2") format("woff2"),
+    url("fonts/woff/PeydaWeb-Bold.woff") format("woff");
 }
 
 @font-face {
-    font-family: peyda;
-    font-style: normal;
-    font-weight: normal;
-    src: url("fonts/woff2/PeydaWeb-Regular.woff2") format("woff2"),
-        url("fonts/woff/PeydaWeb-Regular.woff") format("woff");
+  font-family: peyda;
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/woff2/PeydaWeb-Regular.woff2") format("woff2"),
+    url("fonts/woff/PeydaWeb-Regular.woff") format("woff");
 }
 
 @font-face {
-    font-family: peyda;
-    font-style: normal;
-    font-weight: 600;
-    src: url("fonts/woff2/PeydaWeb-SemiBold.woff2") format("woff2"),
-        url("fonts/woff/PeydaWeb-SemiBold.woff") format("woff");
+  font-family: peyda;
+  font-style: normal;
+  font-weight: 600;
+  src: url("fonts/woff2/PeydaWeb-SemiBold.woff2") format("woff2"),
+    url("fonts/woff/PeydaWeb-SemiBold.woff") format("woff");
 }
 
 @font-face {
-    font-family: peyda;
-    font-style: normal;
-    font-weight: 750;
-    src: url("fonts/woff2/PeydaWeb-Ultrabold.woff2") format("woff2"),
-        url("fonts/woff/PeydaWeb-Ultrabold.woff") format("woff");
+  font-family: peyda;
+  font-style: normal;
+  font-weight: 750;
+  src: url("fonts/woff2/PeydaWeb-Ultrabold.woff2") format("woff2"),
+    url("fonts/woff/PeydaWeb-Ultrabold.woff") format("woff");
 }
 
 @font-face {
-    font-family: peyda;
-    font-style: normal;
-    font-weight: 800;
-    src: url("fonts/woff2/PeydaWeb-ExtraBold.woff2") format("woff2"),
-        url("fonts/woff/PeydaWeb-ExtraBold.woff") format("woff");
+  font-family: peyda;
+  font-style: normal;
+  font-weight: 800;
+  src: url("fonts/woff2/PeydaWeb-ExtraBold.woff2") format("woff2"),
+    url("fonts/woff/PeydaWeb-ExtraBold.woff") format("woff");
 }
 
 @font-face {
-    font-family: peyda;
-    font-style: normal;
-    font-weight: 900;
-    src: url("fonts/woff2/PeydaWeb-Black.woff2") format("woff2"),
-        url("fonts/woff/PeydaWeb-Black.woff") format("woff");
+  font-family: peyda;
+  font-style: normal;
+  font-weight: 900;
+  src: url("fonts/woff2/PeydaWeb-Black.woff2") format("woff2"),
+    url("fonts/woff/PeydaWeb-Black.woff") format("woff");
 }
 
 @font-face {
-    font-family: peyda;
-    font-style: normal;
-    font-weight: bold;
-    src: url("fonts/woff2/PeydaWeb-Bold.woff2") format("woff2"),
-        url("fonts/woff/PeydaWeb-Bold.woff") format("woff");
+  font-family: peyda;
+  font-style: normal;
+  font-weight: bold;
+  src: url("fonts/woff2/PeydaWeb-Bold.woff2") format("woff2"),
+    url("fonts/woff/PeydaWeb-Bold.woff") format("woff");
 }
 
 @font-face {
-    font-family: peyda;
-    font-style: normal;
-    font-weight: normal;
-    src: url("fonts/woff2/PeydaWeb-Regular.woff2") format("woff2"),
-        url("fonts/woff/PeydaWeb-Regular.woff") format("woff");
+  font-family: peyda;
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/woff2/PeydaWeb-Regular.woff2") format("woff2"),
+    url("fonts/woff/PeydaWeb-Regular.woff") format("woff");
 }
