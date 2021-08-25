@@ -46,6 +46,19 @@ button {
     font-family: Vazir FD !important;
 }
 
+
+
+:root{
+    --icon-hover:#3979D9;
+    --icon-bg-hover :rgba(255, 255, 255, 0.85);
+    --text-selection : #0274be;
+}
+
+::selection {
+    background-color: var(--text-selection);
+    color: #fff;
+}
+
 /* end of  constant classes */
 
 /*-----------------START MAIN--------------*/
@@ -337,11 +350,49 @@ button {
 .icon__restaurant,
 .icon__atm,
 .icon__build {
-    color: white;
     width: 48px;
     height: 48px;
     margin-right: 1rem;
+    cursor: pointer;
+    transition: all 5s;
 }
+
+.icon__atm:hover > svg path{
+    fill: var(--icon-hover);
+    stroke: var(--icon-hover);
+    /* transition: all 0.3s ease; */
+   
+}
+.icon__atm:hover  .path-text{
+    fill: white !important;
+}
+
+.icon__bag:hover > svg path{
+    fill: var(--icon-hover);
+    stroke: var(--icon-hover);
+   
+}
+.icon__bag:hover  .path-text{
+    fill: white !important;
+}
+
+.icon__restaurant:hover > svg path{
+    fill: var(--icon-hover);
+    stroke: var(--icon-hover);
+   
+}
+.icon__restaurant:hover  .path-text{
+    fill: white !important;
+}
+.icon__build:hover > svg path{
+    fill: var(--icon-hover);
+    stroke: var(--icon-hover);
+   
+}
+.icon__build:hover  .path-text{
+    fill: white !important;
+}
+
 
 /* search box*/
 .icon-search {
