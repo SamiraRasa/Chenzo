@@ -14,10 +14,6 @@ default style
 body {
     margin-top: 5.5rem;
     font-family: Vazir FD !important;
-
-    max-width: 100%;
-    overflow-x: hidden;
-
 }
 
 /*when scaling webiste image is not disapper behind page and scale */
@@ -471,8 +467,6 @@ header {
     z-index: 10;
     height: 5.4rem;
     top: 0;
-
-
 }
 
 header nav {
@@ -537,13 +531,18 @@ header a:hover {
     background-color: #101010;
 }
 
-/*---------header-----------------*/
+/*---------end-header-----------------*/
 
 /*---------Footer--------------*/
 
+
+footer {
+    height: 16rem;
+}
+
 .sub-footer {
     background-color: #222222;
-    height: 3.775rem;
+    height: 3.5rem;
     width: 100%;
     justify-content: center;
     align-items: center;
@@ -557,28 +556,32 @@ header a:hover {
 
 .sub-footer p {
     color: #fff;
-    font: 0.93rem/1rem Vazir FD;
+    font: 0.93rem Vazir FD;
 }
 
 .carzar {
     background-color: #fff;
     color: #3979d9;
-    margin-right: .5rem;
+    margin-right: 0.5rem;
     font: 0.93rem/1rem Vazir FD !important;
     border-radius: 0.62rem;
     padding: 0.5rem 0.93rem;
     border: none;
     cursor: pointer;
+}
 
+.main-footer {
+    margin: 0 2rem;
 }
 
 .container-row {
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-    /* max-width: 100%; */
+    margin: 1em 1.5em;
 
 }
+
 
 .col-footer h4 {
     margin-bottom: 0.9em;
@@ -589,16 +592,14 @@ header a:hover {
 }
 
 .address div {
-    margin: .5em;
+    margin: 0.5em;
 }
 
-footer a,
+.col-footer a,
 p {
     font: 0.93rem/2em Vazir FD !important;
     color: #404040;
 }
-
-
 
 footer i {
     color: #3979d9;
@@ -617,8 +618,6 @@ footer i {
     margin-top: 2rem;
 }
 
-
-
 .cap p {
     padding: 0.4rem;
     font: bold 1.12rem/1.4rem peyda !important;
@@ -629,27 +628,20 @@ footer i {
 .cap img {
     justify-self: flex-start;
     z-index: 1;
-
 }
 
 .copy-right {
-
-    height: 3.775rem;
     width: 100%;
     text-align: center;
-    margin: 20px;
+    height: 3.5rem;
 }
 
 .copy-right a {
     color: #3979d9;
 }
 
-
-
-
-
-/*---------Footer-----------------*/
-
+/*--------end-Footer-----------------*/
+/* hamburger menu with CSS */
 /* .checkbtn {
     font-size: 30px;
     color: #404040;
@@ -664,22 +656,16 @@ footer i {
     display: none;
 } */
 
-/* @media (max-width: 962px) {
-    nav ul li a {
-        font-size: 13px;
-    }
 
 
-} */
+
 
 @media only screen and (max-width: 962px) {
-    /* body {
-        max-width: 100%;
-    } */
-
-    nav ul li a {
-        font-size: 13px;
+    header nav ul li a {
+        font-size: 26px;
+        color: #fff !important;
     }
+
 
     /* .checkbtn {
         display: block;
@@ -696,6 +682,8 @@ footer i {
         flex-direction: column;
         background-color: #3979d9;
     }
+
+
 
     .nav-menu.active {
         right: 0;
@@ -719,11 +707,6 @@ footer i {
     }
 
 
-    header nav ul li a {
-        color: #fff;
-        font: 700 1.2em/1rem Vazir FD !important;
-    }
-
     .btn_header {
         background-color: #fff;
         color: #3979d9;
@@ -734,32 +717,38 @@ footer i {
     .fixed-footer {
         position: sticky;
         bottom: 0;
-        z-index: 1000;
-        max-width: 100%;
+        /* z-index: 1000; */
+        width: 100%;
     }
+
+    /* .address {
+        width: 27%;
+    } */
 
     /* #check:checked~ul {
         right: 0;
     } */
-
-    .container-row {
-        width: 90%;
-        flex-wrap: wrap;
-        /* justify-content: space-around; */
-    }
-
     .cap {
         width: fit-content;
         flex-direction: row-reverse;
-        /* flex: 0 1 100%; */
     }
-
-    /* .col-footer {
-        flex-basis: 50%;
-    } */
 }
 
-/*mobile */
+/* ipad */
+
+/* @media screen and (max-width: 767px) {
+    .col-footer .address {
+        flex-basis: 27%;
+
+
+    }
+} */
+
+@media only screen and (min-width: 601px) and(max-width: 850px) {
+    .address {
+        flex-basis: 27%;
+    }
+}
 
 @media only screen and (max-width: 600px) {
     body {
@@ -784,34 +773,18 @@ footer i {
         font-size: 0.7em;
     }
 
-    /* .sub-footer {
-        width: 90%;
+    .carzar {
+        width: 50%;
+    }
 
+    /* .col-footer {
+        width: 27%;
     } */
-
-    .container-row {
-
-        flex-wrap: wrap;
-        margin: 0 7%;
-        /* justify-content: space-around; */
-    }
-
-    .col-footer {
-
-        /* flex-basis: calc(110vh - 80vw); */
-        flex-basis: 50%;
-    }
-
-    .social-media {
-        display: flex;
-    }
-
 
     .address {
         display: flex;
         flex-direction: column-reverse;
-        flex-grow: 1;
-
+        flex-basis: 100%;
 
     }
 
@@ -819,26 +792,52 @@ footer i {
         font-size: 0.5em;
     }
 
+    .social-media {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
     .cap {
         width: fit-content;
         flex-direction: row-reverse;
         flex-grow: 1;
-        /* flex-wrap: wrap; */
     }
 
     .cap p {
         align-items: flex-end;
     }
 
-    .copy-right {
-        font-size: .8em;
-        /* flex-basis: 100%; */
+    .cap img {
+        width: 60%;
     }
 
-    /* section {
+    .copy-right {
+        font-size: 0.5rem;
+    }
+
+}
+
+/* section {
         width: 100%;
         height: calc(110vh - 80vw);
     } */
+
+
+@media screen and (max-width: 374px) {
+    .nav-menu {
+        display: none;
+    }
+
+    .social-media {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .cap img {
+        width: 60%;
+    }
+
 }
 
 
