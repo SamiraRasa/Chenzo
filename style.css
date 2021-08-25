@@ -353,15 +353,18 @@ button {
     width: 48px;
     height: 48px;
     margin-right: 1rem;
-    cursor: pointer;
-    transition: all 5s;
+
+}
+
+.icon__build  svg .path-bg ,.icon__atm  svg .path-bg ,.icon__restaurant  svg .path-bg ,.icon__bag  svg .path-bg 
+{
+    fill: #404040;
+    transition:0.4s; 
 }
 
 .icon__atm:hover > svg path{
-    fill: var(--icon-hover);
+    fill: var(--icon-hover);  
     stroke: var(--icon-hover);
-    /* transition: all 0.3s ease; */
-   
 }
 .icon__atm:hover  .path-text{
     fill: white !important;
@@ -370,7 +373,7 @@ button {
 .icon__bag:hover > svg path{
     fill: var(--icon-hover);
     stroke: var(--icon-hover);
-   
+    
 }
 .icon__bag:hover  .path-text{
     fill: white !important;
