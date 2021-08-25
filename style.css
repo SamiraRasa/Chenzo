@@ -3,6 +3,11 @@ Required css
 default style
 */
 
+html{
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
 *,
 *:before,
 *:after {
@@ -11,9 +16,7 @@ default style
     padding: 0;
 }
 
-html{
-    scroll-behavior: smooth;
-}
+
 
 body {
     margin-top: 5.5rem;
@@ -35,6 +38,10 @@ li {
 
 a {
     text-decoration: none;
+}
+
+.fix-poz{
+    position: fixed;
 }
 
 a:hover {
@@ -126,7 +133,7 @@ button {
         max-width: 100% !important;
     }
 
-    .neshan__do .right img {
+    .neshan__do  .right > img {
         width: 100%;
     }
 
@@ -345,7 +352,7 @@ button {
 .black__container {
     border-radius: 1rem;
     background-color: #404040;
-    margin: 5rem 2rem;
+    /* margin: 5rem 2rem; */
     padding: 3rem;
 }
 
@@ -747,7 +754,9 @@ footer i {
         color: #fff !important;
     }
 
-
+    .nav-menu {
+        display: none;
+    }
     /* .checkbtn {
         display: block;
     } */
@@ -837,7 +846,7 @@ footer i {
         font-size: 0.7em;
     }
 
-    .nav-menu {
+    /* .nav-menu {
         position: fixed;
         width: 100%;
         height: 100vh;
@@ -848,7 +857,7 @@ footer i {
         text-align: center;
         transition: all 0.5s;
         flex-direction: column;
-    }
+    } */
 
     p {
         font-size: 0.7em;
@@ -906,9 +915,7 @@ footer i {
 
 
 @media screen and (max-width: 374px) {
-    .nav-menu {
-        display: none;
-    }
+ 
 
     .social-media {
         display: flex;
