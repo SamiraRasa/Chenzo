@@ -509,7 +509,27 @@ button {
     color: #4e7fea;
     margin-right: 1rem;
 }
-
+/* img section and text behind it */
+.section__img.text{
+    position: relative;
+}
+.blue_container .row .section__img::after{
+    position: absolute;
+    color: black;
+    bottom: 0.5rem;
+    font-weight: 900;
+    font-size: 1.5rem;
+    font-family: peyda;
+}
+.blue_container .row:nth-of-type(1) .section__img.text::after{
+    content: "سرعت‌گیرها رو در نشان ببین!";
+}
+.blue_container .row:nth-of-type(2) .section__img.text::after{
+    content: "با نشان دیگه جریمه نشو!";
+}
+.blue_container .row:nth-of-type(3) .section__img.text::after{
+    content: "هرجا می‌خوای بری از نشان بپرس!";
+}
 /*-----------------END MAIN--------------*/
 
 /*---------header--------------*/
