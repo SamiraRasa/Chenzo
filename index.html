@@ -18,21 +18,21 @@
 
 <body>
     <header>
-        <nav class="df">
+        <nav class="df ">
             <div class="logo">
                 <img src="image/Logo.svg" alt="logo" />
             </div>
-            <input type="checkbox" name="" id="check" />
-            <label for="check" class="checkbtn"><i class="fas fa-bars"></i> </label>
+            <!-- <input type="checkbox" name="" id="check" />
+            <label for="check" class="checkbtn"><i class="fas fa-bars"></i> </label> -->
 
-            <ul class="df">
-                <li><a href="">نقشه</a></li>
-                <li><a href="">قابلیت ها</a></li>
-                <li><a href="">راه کارها</a></li>
-                <li><a href="">بلاگ</a></li>
-                <li><a href="">درباره</a></li>
-                <li><a href="">ارتباط با ما</a></li>
-                <li>
+            <ul class="df nav-menu">
+                <li class=" nav-item "><a href="">نقشه</a></li>
+                <li class=" nav-item "><a href="">قابلیت ها</a></li>
+                <li class=" nav-item "><a href="">راه کارها</a></li>
+                <li class=" nav-item "><a href="">بلاگ</a></li>
+                <li class=" nav-item "><a href="">درباره</a></li>
+                <li class=" nav-item "><a href="">ارتباط با ما</a></li>
+                <li class=" nav-item ">
                     <a href="/download"><button class="df btn_header">
                             <!-- <i class="fas fa-arrow-down"></i> -->
 
@@ -59,6 +59,13 @@
                         </button></a>
                 </li>
             </ul>
+            <div class="hamburger">
+
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
         </nav>
     </header>
 
@@ -286,8 +293,6 @@
         </div>
 
     </main>
-
-
     <div class="fixed-footer">
         <div class="df sub-footer">
             <p>
@@ -298,52 +303,58 @@
         </div>
     </div>
     <footer>
-        <div class="df main-footer">
-            <ul>
-                <li><strong class="title">دانلود</strong></li>
-                <li><a href="#">گوگل پلی</a></li>
-                <li><a href="#">مایکت</a></li>
-                <li><a href="#">سیب‌چه</a></li>
-            </ul>
-            <ul>
-                <li><strong class="title">پشتیبانی</strong></li>
-                <li><a href="#">ارتباط با ما</a></li>
-                <li><a href="#">توسعه دهندگان</a></li>
-                <li><a href="#">فرصت‌های شغلی</a></li>
-            </ul>
-            <ul>
-                <div>
-                    <div class="address">
+        <div class="main-footer">
+            <div class="df container-row">
+                <div class="col-footer
+                ">
+                    <h4>دانلود</h4>
+                    <a href="#">گوگل پلی</a>
+                    <a href="#">مایکت</a>
+                    <a href="#">سیب‌چه</a>
+                </div>
+
+                <div class="col-footer
+                ">
+                    <h4>پشتیبانی</h4>
+                    <a href="#">ارتباط با ما</a>
+                    <a href="#">توسعه دهندگان</a>
+                    <a href="#">فرصت‌های شغلی</a>
+                </div>
+
+                <div class="col-footer address">
+                    <div>
                         <p>
                             <strong class="title">آدرس‌:‌</strong> خراسان رضوی، مشهد،
-                            بلوار ملک آباد،<br />
+                            بلوار ملک آباد،<br>
                             خیابان هوشیار، هوشیار ۴، پلاک ۴۶
                         </p>
                     </div>
                     <div class="social-media">
-                        <li>
-                            <a href="#"><i class="fab fa-telegram-plane"></i>پشتیبانی کاربران در
-                                تلگرام</a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fas fa-envelope"></i> پست الکترونیکی</a>
-                        </li>
+                        <p><a href="#"><i class="fab fa-telegram-plane"></i>پشتیبانی کاربران در
+                                تلگرام</a></p>
+                        <p><a href="#"><i class="fas fa-envelope"></i> پست الکترونیکی</a></p>
+
                     </div>
                 </div>
-            </ul>
 
-            <div class="df cap">
-                <img src="image/Artboard-1-1.png" alt="" />
-                <p>بهـــترین مسیریاب</p>
-                <p>ایران در سـال ۹۷، ۹۸ و ۹۹</p>
+                <div class="col-footer df cap">
+                    <img src="image/Artboard-1-1.png" alt="" />
+                    <div class="the-best">
+                        <p>بهـــترین مسیریاب</p>
+                        <p>ایران در سـال ۹۷، ۹۸ و ۹۹</p>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="copy-right">
-            <h4>© کلیه حقوق و محتوای این وب‌سایت و اپلیکیشن برای <a>سازه‌های اطلاعاتی راژمان</a> محفوظ می‌باشد
-            </h4>
+            <p>© کلیه حقوق و محتوای این وب‌سایت و اپلیکیشن برای <a>سازه‌های اطلاعاتی راژمان</a> محفوظ می‌باشد
+            </p>
         </div>
     </footer>
 
+
+
+    <script src="script.js"></script>
 </body>
 
 </html>
