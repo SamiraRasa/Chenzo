@@ -86,8 +86,9 @@ button {
   }
   .card__header {
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -101,8 +102,23 @@ button {
   }
 }
 
+@media (max-width:551px){
+  .section__text h1 {
+    font-size: 1rem !important;
+    margin: 0 0 1rem 0 !important;
+  }
+  .section__text p{
+    margin: 0 0 1rem 0 !important;
+  }
+
+}
+
 /*common mobile 576*/
 @media only screen and (max-width: 1034px) {
+  .section__text h1 {
+    margin-top: 1rem !important;
+  }
+
   .space {
     height: 9rem;
   }
@@ -228,9 +244,6 @@ button {
 }
 
 @media (max-width: 761px) {
-  .section__text h1 {
-    margin-top: 1rem !important;
-  }
 
   .hero__image {
     background-image: url(image/tehran360.jpg);
@@ -442,7 +455,12 @@ button {
 .search__container {
   flex-basis: 70%;
 }
-
+ @media  (max-width:425px){
+   .black__container{
+     padding: 2rem !important;
+   }
+   
+ }
 .input-search input {
   outline: none;
   border: none;
@@ -450,27 +468,17 @@ button {
   background-color: white;
   padding: 10px 1rem;
   font-family: Vazir FD !important;
-  font-size: 10px !important;
+  font-size: 0.9rem !important;
   width: 100%;
-  /* color: #BBBBBB !important; */
-  line-height: 20px;
+  line-height: 2rem;
 }
 
 .icon__search {
   position: absolute;
-  z-index: 100;
-  top: 6px;
+  top: 0.8rem;
   left: 20px;
   margin: 0 auto;
   padding: 5px;
-}
-
-::-webkit-input-placeholder { /* Edge */
-  color: #BBBBBB;
-}
-
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
-  color: #BBBBBB;
 }
 
 ::placeholder {
@@ -490,6 +498,13 @@ button {
     margin-top: 1rem;
     flex-grow: 1;
   }
+  .card-1{
+    margin-left: 0 !important;
+  }
+  .card_section img{
+    margin-left: 3rem;
+
+  }
 }
 
 .card {
@@ -506,11 +521,14 @@ button {
 }
 
 .card-1 {
-  flex-basis: 50%;
+  /* flex-basis: 50%; */
+  flex-grow: 1;
+  margin-left: 3rem;
 }
 
 .card-2 {
-  flex-basis: 40%;
+  /* flex-basis: 40%; */
+  flex-grow: 1;
 }
 
 .card_section {
