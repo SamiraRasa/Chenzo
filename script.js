@@ -8,7 +8,5 @@ hamburger.addEventListener("click", mobileMenu);
 function mobileMenu() {
     hamburger.classList.toggle("active");
     navMenu.classList.toggle("active");
-
     body1.classList.toggle("fix-poz")
-    
 }
