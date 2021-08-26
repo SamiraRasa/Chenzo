@@ -6,7 +6,7 @@ default style
 *,
 *:before,
 *:after {
-    box-sizing: inherit;
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
@@ -531,6 +531,11 @@ header a:hover {
     background-color: #101010;
 }
 
+.fix {
+    position: fixed;
+}
+
+
 /*---------end-header-----------------*/
 
 /*---------Footer--------------*/
@@ -563,7 +568,7 @@ footer {
     background-color: #fff;
     color: #3979d9;
     margin-right: 0.5rem;
-    font: 0.93rem/1rem Vazir FD !important;
+    font: 0.93rem Vazir FD !important;
     border-radius: 0.62rem;
     padding: 0.5rem 0.93rem;
     border: none;
@@ -589,17 +594,20 @@ footer {
 
 .col-footer a {
     display: block;
+    color: #404040;
+    font: 0.93rem Vazir FD;
+    margin-bottom: 0.3em;
 }
 
 .address div {
     margin: 0.5em;
 }
 
-.col-footer a,
+/* .col-footer a,
 p {
     font: 0.93rem/2em Vazir FD !important;
     color: #404040;
-}
+} */
 
 footer i {
     color: #3979d9;
@@ -683,8 +691,6 @@ footer i {
         background-color: #3979d9;
     }
 
-
-
     .nav-menu.active {
         right: 0;
     }
@@ -717,13 +723,8 @@ footer i {
     .fixed-footer {
         position: sticky;
         bottom: 0;
-        /* z-index: 1000; */
         width: 100%;
     }
-
-    /* .address {
-        width: 27%;
-    } */
 
     /* #check:checked~ul {
         right: 0;
@@ -734,15 +735,6 @@ footer i {
     }
 }
 
-/* ipad */
-
-/* @media screen and (max-width: 767px) {
-    .col-footer .address {
-        flex-basis: 27%;
-
-
-    }
-} */
 
 @media only screen and (min-width: 601px) and(max-width: 850px) {
     .address {
@@ -753,49 +745,48 @@ footer i {
 @media only screen and (max-width: 600px) {
     body {
         width: fit-content;
-        font-size: 0.7em;
+        /* font-size: 0.7rem; */
     }
 
-    .nav-menu {
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background-color: #3979d9;
-        color: #fff;
-        top: 80px;
-        right: -100%;
-        text-align: center;
-        transition: all 0.5s;
-        flex-direction: column;
-    }
-
-    p {
-        font-size: 0.7em;
-    }
 
     .carzar {
-        width: 50%;
+
+        font: 0.7em Vazir FD !important;
+        width: 100px;
+        padding: 5px 0px;
     }
 
-    /* .col-footer {
-        width: 27%;
-    } */
+    .sub-footer p {
+        font: 0.7rem Vazir FD;
+    }
+
+
+    .container-row {
+        justify-content: flex-start;
+    }
+
+    .col-footer {
+        flex-basis: 50%;
+    }
+
 
     .address {
         display: flex;
         flex-direction: column-reverse;
         flex-basis: 100%;
-
     }
 
-    .address p {
-        font-size: 0.5em;
+    br {
+        display: none;
     }
 
     .social-media {
         display: flex;
-        justify-content: space-around;
         align-items: center;
+    }
+
+    .social-media p {
+        margin-left: 20px;
     }
 
     .cap {
@@ -809,7 +800,7 @@ footer i {
     }
 
     .cap img {
-        width: 60%;
+        width: 40%;
     }
 
     .copy-right {
@@ -829,10 +820,10 @@ footer i {
         display: none;
     }
 
-    .social-media {
+    /* .social-media {
         display: flex;
         justify-content: space-around;
-    }
+    } */
 
     .cap img {
         width: 60%;
