@@ -3,11 +3,6 @@ Required css
 default style
 */
 
-html{
-    scroll-behavior: smooth;
-    box-sizing: border-box;
-}
-
 *,
 *:before,
 *:after {
@@ -16,7 +11,10 @@ html{
     padding: 0;
 }
 
-
+html{
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
 
 body {
     margin-top: 5.5rem;
@@ -24,9 +22,10 @@ body {
 }
 
 /*when scaling webiste image is not disapper behind page and scale */
-/* img {
-  max-width: 100%;
-} */
+img {
+  max-width: 100% !important;
+
+}
 
 .df {
     display: flex;
@@ -73,6 +72,29 @@ button {
 /* end of  constant classes */
 
 /*-----------------START MAIN--------------*/
+ @media only screen and (max-width: 392px) {
+        /* for firefox */
+     .card_section{
+
+         justify-content: center !important;
+         text-align: center;
+     }
+  
+   .card_section img{
+       display: none;
+       
+    }
+    .card-2{
+        flex-basis: 50% !important;
+    }
+    .card__header{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+  
+} 
 
 @media only screen and (min-width: 2000px) {
     .hero__text h1 {
@@ -133,7 +155,7 @@ button {
         max-width: 100% !important;
     }
 
-    .neshan__do  .right > img {
+    .neshan__do  .right  img {
         width: 100%;
     }
 
@@ -306,7 +328,6 @@ button {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* align-items: center; */
 }
 
 .neshan__do .left h1 {
@@ -315,7 +336,7 @@ button {
 
 .neshan__do .left .content {
     margin-bottom: 1.6em;
-    text-align: center;
+    /* text-align: center; */
 }
 
 .neshan__do .right {
@@ -324,20 +345,24 @@ button {
 }
 
 .btn__blue {
+    display: flex;
     background-color: #3979d9;
-    color: white;
-    padding: 10px 20px;
     font-family: Vazir FD !important;
     outline: none;
     border: none;
     justify-content: center;
     align-items: center;
-    border-radius: 20px;
+    border-radius: 2rem;
+    padding: 0.8rem 2rem 0.8rem 2rem;
     width: fit-content;
     transition: all 0.3s ease;
     cursor: pointer;
 }
-
+.btn__blue p{
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+}
 .btn__blue:hover {
     transform: translateY(-10px);
 }
@@ -352,7 +377,7 @@ button {
 .black__container {
     border-radius: 1rem;
     background-color: #404040;
-    /* margin: 5rem 2rem; */
+    margin: 5rem 2rem;
     padding: 3rem;
 }
 
@@ -683,8 +708,8 @@ footer {
     margin: 0.5em;
 }
 
-.col-footer a,
-p {
+.col-footer a,.col-footer p
+{
     font: 0.93rem/2em Vazir FD !important;
     color: #404040;
 }
@@ -754,9 +779,7 @@ footer i {
         color: #fff !important;
     }
 
-    .nav-menu {
-        display: none;
-    }
+  
     /* .checkbtn {
         display: block;
     } */
@@ -846,7 +869,11 @@ footer i {
         font-size: 0.7em;
     }
 
-    /* .nav-menu {
+    .nav-menu {
+        display: none;
+    }
+
+    .nav-menu {
         position: fixed;
         width: 100%;
         height: 100vh;
@@ -857,7 +884,7 @@ footer i {
         text-align: center;
         transition: all 0.5s;
         flex-direction: column;
-    } */
+    }
 
     p {
         font-size: 0.7em;
