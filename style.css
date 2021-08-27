@@ -15,12 +15,12 @@ default style
 html {
   scroll-behavior: smooth;
   box-sizing: border-box;
+  background-color: #F8F9FD !important;
 }
 
 body {
   margin-top: 5.5rem;
   font-family: Vazir FD !important;
-  background-color: #F8F9FD !important;
 }
 
 /*when scaling webiste image is not disapper behind page and scale */
