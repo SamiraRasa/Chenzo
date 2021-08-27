@@ -72,6 +72,7 @@ button {
 
 /*-----------------START MAIN--------------*/
 @media only screen and (max-width: 392px) {
+
   /* for firefox */
   .card_section {
     justify-content: center !important;
@@ -81,9 +82,11 @@ button {
   .card_section img {
     margin-left: 0 !important;
   }
+
   .card-2 {
     flex-basis: 50% !important;
   }
+
   .card__header {
     display: flex;
     flex-direction: column;
@@ -122,6 +125,7 @@ button {
   .space {
     height: 9rem;
   }
+
   .neshan__do .left {
     align-items: center !important;
   }
@@ -193,9 +197,10 @@ button {
     left: 10px !important;
   }
 
-  .icon__container{
+  .icon__container {
     justify-content: space-around;
   }
+
   /*for tablets*/
   .icon-search {
     flex-direction: column !important;
@@ -369,11 +374,13 @@ button {
   transition: all 0.3s ease;
   cursor: pointer;
 }
+
 .btn__blue p {
   color: white;
   font-weight: bold;
   font-size: 1rem;
 }
+
 .btn__blue:hover {
   transform: translateY(-10px);
 }
@@ -413,33 +420,38 @@ button {
   transition: 0.4s;
 }
 
-.icon__atm:hover > svg path {
+.icon__atm:hover>svg path {
   fill: var(--icon-hover);
   stroke: var(--icon-hover);
 }
+
 .icon__atm:hover .path-text {
   fill: white !important;
 }
 
-.icon__bag:hover > svg path {
+.icon__bag:hover>svg path {
   fill: var(--icon-hover);
   stroke: var(--icon-hover);
 }
+
 .icon__bag:hover .path-text {
   fill: white !important;
 }
 
-.icon__restaurant:hover > svg path {
+.icon__restaurant:hover>svg path {
   fill: var(--icon-hover);
   stroke: var(--icon-hover);
 }
+
 .icon__restaurant:hover .path-text {
   fill: white !important;
 }
-.icon__build:hover > svg path {
+
+.icon__build:hover>svg path {
   fill: var(--icon-hover);
   stroke: var(--icon-hover);
 }
+
 .icon__build:hover .path-text {
   fill: white !important;
 }
@@ -479,6 +491,16 @@ button {
   left: 20px;
   margin: 0 auto;
   padding: 5px;
+}
+
+::-webkit-input-placeholder {
+  /* Edge */
+  color: #BBBBBB;
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #BBBBBB;
 }
 
 ::placeholder {
@@ -573,10 +595,12 @@ button {
   color: #4e7fea;
   margin-right: 1rem;
 }
+
 /* img section and text behind it */
 .section__img.text {
   position: relative;
 }
+
 .blue_container .row .section__img::after {
   position: absolute;
   color: black;
@@ -585,15 +609,19 @@ button {
   font-size: 1.5rem;
   font-family: peyda;
 }
+
 .blue_container .row:nth-of-type(1) .section__img.text::after {
   content: "سرعت‌گیرها رو در نشان ببین!";
 }
+
 .blue_container .row:nth-of-type(2) .section__img.text::after {
   content: "با نشان دیگه جریمه نشو!";
 }
+
 .blue_container .row:nth-of-type(3) .section__img.text::after {
   content: "هرجا می‌خوای بری از نشان بپرس!";
 }
+
 /*-----------------END MAIN--------------*/
 
 /*---------header--------------*/
@@ -624,7 +652,7 @@ header nav ul li {
 }
 
 header nav ul li a {
-  font: 500 0.875rem/1.1rem Vazir FD !important;
+  font: bold 0.875rem/1.1rem Vazir FD;
   color: #464646;
 }
 
@@ -634,13 +662,16 @@ header nav ul li a {
 
 .btn_header {
   display: flex;
-  font: 500 0.875rem/1rem Vazir FD !important;
+  font: 600 0.875rem/1rem Vazir FD !important;
   align-items: center;
   padding: 0.32rem 0.81rem 0.3rem 1.31rem;
   border-radius: 100px;
   background-color: #3979d9;
   color: #fff;
   border: none;
+  height: 36px;
+
+
 }
 
 .btn_header:hover {
@@ -665,11 +696,7 @@ header a:hover {
   margin: 5px auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background-color: #101010;
-}
-
-.fix {
-  position: fixed;
+  background-color: #222222;
 }
 
 /*---------end-header-----------------*/
@@ -704,10 +731,11 @@ footer {
   color: #3979d9;
   margin-right: 0.5rem;
   font: 0.93rem Vazir FD !important;
-  border-radius: 0.62rem;
-  padding: 0.5rem 0.93rem;
+  border-radius: 20px;
+  padding: 0.3rem 0.93rem;
   border: none;
   cursor: pointer;
+  height: 31px;
 }
 
 .main-footer {
@@ -732,15 +760,9 @@ footer {
   margin-bottom: 0.3em;
 }
 
-.address div {
-  margin: 0.5em;
+.address .container-addresse {
+  margin-bottom: 1em;
 }
-
-/* .col-footer a,
-p {
-    font: 0.93rem/2em Vazir FD !important;
-    color: #404040;
-} */
 
 footer i {
   color: #3979d9;
@@ -761,7 +783,7 @@ footer i {
 
 .cap p {
   padding: 0.4rem;
-  font: bold 1.12rem/1.4rem peyda !important;
+  font: 700 1.12rem/1.4rem peyda !important;
   color: #4a529e;
   text-align: center;
 }
@@ -794,18 +816,34 @@ footer i {
 }
 
 #check {
-    display: none;
-} */
-
-@media only screen and (max-width: 962px) {
-  header nav ul li a {
-    font-size: 26px;
-    color: #fff !important;
+   */
+@media only screen and (max-width: 1300px) {
+  .cap {
+    width: fit-content;
+    flex-direction: row-reverse;
   }
 
-  /* .checkbtn {
-        display: block;
-    } */
+  .cap img {
+    width: 75%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+
+  header nav ul li a {
+
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 2rem;
+    color: #fff !important;
+    margin-bottom: 20px;
+
+  }
+
+  header nav ul li a:hover {
+    color: #404040 !important;
+  }
+
 
   .nav-menu {
     position: fixed;
@@ -843,48 +881,36 @@ footer i {
   .btn_header {
     background-color: #fff;
     color: #3979d9;
-    height: 30px;
+    height: 50px;
     margin: 0 auto;
+  }
+
+  .btn_header svg {
+    fill: #3979D9;
+    color: #3979D9;
+
   }
 
   .fixed-footer {
     position: sticky;
     bottom: 0;
     width: 100%;
+    z-index: 1;
   }
 
-  /* #check:checked~ul {
-        right: 0;
-    } */
-  .cap {
-    width: fit-content;
-    flex-direction: row-reverse;
-  }
 }
 
-@media only screen and (min-width: 601px) and(max-width: 850px) {
+/* 
+@media only screen and (min-width: 601px) and (max-width: 850px) {
   .address {
     flex-basis: 27%;
   }
-}
+} */
 
 @media only screen and (max-width: 600px) {
   body {
     width: fit-content;
-    /* font-size: 0.7rem; */
-  }
 
-  .nav-menu {
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    background-color: #3979d9;
-    color: #fff;
-    top: 80px;
-    right: -100%;
-    text-align: center;
-    transition: all 0.5s;
-    flex-direction: column;
   }
 
   .carzar {
@@ -943,20 +969,9 @@ footer i {
   }
 }
 
-/* section {
-        width: 100%;
-        height: calc(110vh - 80vw);
-    } */
-@media screen and (max-width: 390px) {
-  /* .nav-menu {
-    display: none;
-  } */
-}
+
+
 @media screen and (max-width: 374px) {
-  /* .social-media {
-        display: flex;
-        justify-content: space-around;
-    } */
 
   .cap img {
     width: 60%;
