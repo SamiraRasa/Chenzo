@@ -1,16 +1,17 @@
-var http = require('http');
-var fs = require('fs');
-var path = require('path'); 
+const http = require('http');
+const fs = require('fs');
+const path = require('path'); 
 
 http.createServer(function (request, response) {
     console.log('request ', request.url);
 
-    var filePath = '.' + request.url;
+    let filePath = '.' + request.url;
     if (filePath == './') {
         filePath = './index.html';
     }
 
     var extname = String(path.extname(filePath)).toLowerCase();
+    //content Type
     var mimeTypes = {
         '.html': 'text/html',
         '.js': 'text/javascript',
@@ -34,6 +35,7 @@ http.createServer(function (request, response) {
     fs.readFile(filePath, function(error, content) {
         if (error) {
             if(error.code == 'ENOENT') {
+                //status Code
                 fs.readFile('./404.html', function(error, content) {
                     response.writeHead(404, { 'Content-Type': 'text/html' });
                     response.end(content, 'utf-8');
