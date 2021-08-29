@@ -7,9 +7,6 @@ var path = require('path');
 
 
 // http url we create our server
-
-   
-
 const server = http.createServer(function (request, response) {
     console.log('request ', request.url);
 
@@ -42,6 +39,7 @@ const server = http.createServer(function (request, response) {
 
     fs.readFile(filePath, function (error, content) {
         if (error) {
+            console.log(error)
             if (error.code == 'ENOENT') {
                 fs.readFile('./404.html', function (error, content) {
                     response.writeHead(404, { 'Content-Type': 'text/html' });

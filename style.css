@@ -521,7 +521,6 @@ button {
 .card {
   justify-content: space-between;
   padding: 0 1rem;
-  /* flex-wrap: wrap; */
 }
 
 .card__header h1 {
@@ -532,7 +531,6 @@ button {
 }
 
 .card-1 {
-  /* flex-basis: 50%; */
   flex-grow: 1;
   margin-left: 3rem;
 }
