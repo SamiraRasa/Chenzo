@@ -10,3 +10,5 @@ function mobileMenu() {
     navMenu.classList.toggle("active");
     body1.classList.toggle("fix-poz")
 }
+
+

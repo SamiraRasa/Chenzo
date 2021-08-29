@@ -1,9 +1,15 @@
+/*import modules*/
+// node try to mirror the browser api
+//wrapping life function 
 var http = require('http');
-var fs = require('fs');
-var path = require('path'); 
+var fs = require('fs'); /*file system pass files to the users*/
+var path = require('path');
 
-http.createServer(function (request, response) {
+
+// http url we create our server
+const server = http.createServer(function (request, response) {
     console.log('request ', request.url);
+
 
     var filePath = '.' + request.url;
     if (filePath == './') {
@@ -31,17 +37,18 @@ http.createServer(function (request, response) {
 
     var contentType = mimeTypes[extname] || 'application/octet-stream';
 
-    fs.readFile(filePath, function(error, content) {
+    fs.readFile(filePath, function (error, content) {
         if (error) {
-            if(error.code == 'ENOENT') {
-                fs.readFile('./404.html', function(error, content) {
+            console.log(error)
+            if (error.code == 'ENOENT') {
+                fs.readFile('./404.html', function (error, content) {
                     response.writeHead(404, { 'Content-Type': 'text/html' });
                     response.end(content, 'utf-8');
                 });
             }
             else {
                 response.writeHead(500);
-                response.end('Sorry, check with the site admin for error: '+error.code+' ..\n');
+                response.end('Sorry, check with the site admin for error: ' + error.code + ' ..\n');
             }
         }
         else {
@@ -50,5 +57,9 @@ http.createServer(function (request, response) {
         }
     });
 
-}).listen(8125);
-console.log('Server running at http://127.0.0.1:8125/');
+})
+
+server.listen(8125);
+
+
+console.log('Server running at http://127.0.0.1:8125');
