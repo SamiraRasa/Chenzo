@@ -15,7 +15,7 @@ default style
 html {
   scroll-behavior: smooth;
   box-sizing: border-box;
-  background-color: #F8F9FD !important;
+  background-color: #f8f9fd !important;
 }
 
 body {
@@ -46,11 +46,7 @@ a {
 
 a:hover {
   text-decoration: none;
-  /* transition: all ease .3s; */
-
   cursor: pointer;
-
-  /* transition: all ease .3s; */
 }
 
 button {
@@ -72,7 +68,6 @@ button {
 
 /*-----------------START MAIN--------------*/
 @media only screen and (max-width: 392px) {
-
   /* for firefox */
   .card_section {
     justify-content: center !important;
@@ -92,7 +87,6 @@ button {
     flex-direction: column;
     align-items: center;
   }
-
 }
 
 @media only screen and (min-width: 2000px) {
@@ -105,15 +99,14 @@ button {
   }
 }
 
-@media (max-width:551px){
+@media (max-width: 551px) {
   .section__text h1 {
     font-size: 1rem !important;
     margin: 0 0 1rem 0 !important;
   }
-  .section__text p{
+  .section__text p {
     margin: 0 0 1rem 0 !important;
   }
-
 }
 
 /*common mobile 576*/
@@ -209,7 +202,6 @@ button {
 
   .search__container {
     margin-bottom: 1rem !important;
-
   }
 
   .black__container h1 {
@@ -249,7 +241,6 @@ button {
 }
 
 @media (max-width: 761px) {
-
   .hero__image {
     background-image: url(image/tehran360.jpg);
     background-position: center center;
@@ -420,7 +411,7 @@ button {
   transition: 0.4s;
 }
 
-.icon__atm:hover>svg path {
+.icon__atm:hover > svg path {
   fill: var(--icon-hover);
   stroke: var(--icon-hover);
 }
@@ -429,7 +420,7 @@ button {
   fill: white !important;
 }
 
-.icon__bag:hover>svg path {
+.icon__bag:hover > svg path {
   fill: var(--icon-hover);
   stroke: var(--icon-hover);
 }
@@ -438,7 +429,7 @@ button {
   fill: white !important;
 }
 
-.icon__restaurant:hover>svg path {
+.icon__restaurant:hover > svg path {
   fill: var(--icon-hover);
   stroke: var(--icon-hover);
 }
@@ -447,7 +438,7 @@ button {
   fill: white !important;
 }
 
-.icon__build:hover>svg path {
+.icon__build:hover > svg path {
   fill: var(--icon-hover);
   stroke: var(--icon-hover);
 }
@@ -467,12 +458,11 @@ button {
 .search__container {
   flex-basis: 70%;
 }
- @media  (max-width:425px){
-   .black__container{
-     padding: 2rem !important;
-   }
-   
- }
+@media (max-width: 425px) {
+  .black__container {
+    padding: 2rem !important;
+  }
+}
 .input-search input {
   outline: none;
   border: none;
@@ -495,16 +485,16 @@ button {
 
 ::-webkit-input-placeholder {
   /* Edge */
-  color: #BBBBBB;
+  color: #bbbbbb;
 }
 
 :-ms-input-placeholder {
   /* Internet Explorer 10-11 */
-  color: #BBBBBB;
+  color: #bbbbbb;
 }
 
 ::placeholder {
-  color: #BBBBBB;
+  color: #bbbbbb;
 }
 
 /*----------*/
@@ -520,12 +510,11 @@ button {
     margin-top: 1rem;
     flex-grow: 1;
   }
-  .card-1{
+  .card-1 {
     margin-left: 0 !important;
   }
-  .card_section img{
+  .card_section img {
     margin-left: 3rem;
-
   }
 }
 
@@ -670,8 +659,6 @@ header nav ul li a {
   color: #fff;
   border: none;
   height: 36px;
-
-
 }
 
 .btn_header:hover {
@@ -683,7 +670,7 @@ header a:hover {
   color: #3979d9;
 }
 
-/* Hamburger menue */
+/* Hamburger menu */
 
 .hamburger {
   display: none;
@@ -829,21 +816,17 @@ footer i {
 }
 
 @media only screen and (max-width: 1024px) {
-
   header nav ul li a {
-
     font-weight: 600;
     font-size: 20px;
     line-height: 2rem;
     color: #fff !important;
     margin-bottom: 20px;
-
   }
 
   header nav ul li a:hover {
     color: #404040 !important;
   }
-
 
   .nav-menu {
     position: fixed;
@@ -886,9 +869,8 @@ footer i {
   }
 
   .btn_header svg {
-    fill: #3979D9;
-    color: #3979D9;
-
+    fill: #3979d9;
+    color: #3979d9;
   }
 
   .fixed-footer {
@@ -897,20 +879,11 @@ footer i {
     width: 100%;
     z-index: 1;
   }
-
 }
-
-/* 
-@media only screen and (min-width: 601px) and (max-width: 850px) {
-  .address {
-    flex-basis: 27%;
-  }
-} */
 
 @media only screen and (max-width: 600px) {
   body {
     width: fit-content;
-
   }
 
   .carzar {
@@ -969,10 +942,7 @@ footer i {
   }
 }
 
-
-
 @media screen and (max-width: 374px) {
-
   .cap img {
     width: 60%;
   }
