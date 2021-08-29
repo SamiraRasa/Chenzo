@@ -1,1 +1,2 @@
 # Chenzo
+run node server 
